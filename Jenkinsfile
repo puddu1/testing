@@ -4,5 +4,6 @@ node {
       sh label: '', script: 'echo "hello"'
       sh label: '', script: 'echo "this is test script"'
       sh label: '', script: 'echo "this is second test line"'
+      sh label: '', script: 'echo "this is third test line"'
       } 
 }
