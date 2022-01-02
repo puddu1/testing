@@ -5,6 +5,6 @@ node {
       sh label: '', script: 'echo "this is the first test script."'
       sh label: '', script: 'echo "this is second test script."'
       sh label: '', script: 'echo "this is third test line"'
-      echo 'Pulling... ' + env.GIT_BRANCH
+      echo 'Pulling... ' "${GIT_BRANCH}"
       } 
 }
