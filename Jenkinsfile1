@@ -5,8 +5,7 @@ pipeline {
           steps{
             sh ''' echo "hello" 
             git branch
-            line = git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short)' 
-            echo ${line}
+            echo(env.BRANC_NAME)
             '''
           }
 
