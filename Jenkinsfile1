@@ -5,9 +5,13 @@ pipeline {
           steps{
           script{
           echo "${params.Choice_Job}"
-                   def DEPLOYMENT_SHARE_NAME = "${params.Choice_Job}"
+                   def DEPLOYMENT_SHARE_NAME = "WEBPC"
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
                         echo "DEPLOY_SHARE_NAME: $DEPLOY_SHARE_NAME"
+                        
+              if (${params.Choice_Job} == $DEPLOY_SHARE_NAME) {
+                echo "hello Word"
+              }
            }
           }
 
