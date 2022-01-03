@@ -4,8 +4,8 @@ pipeline {
         stage('hello'){
           steps{
           script{
-          echo ${params.Choice_Job}
-                   def DEPLOYMENT_SHARE_NAME = 'NEW WEB'
+          echo "${params.Choice_Job}"
+                   def DEPLOYMENT_SHARE_NAME = "${params.Choice_Job}"
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
                         echo "DEPLOY_SHARE_NAME: $DEPLOY_SHARE_NAME"
            }
