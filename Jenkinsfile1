@@ -10,7 +10,6 @@ pipeline {
                    def DEPLOYMENT_SHARE_NAME = 'TJX_LPWS_W10'
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
                         echo "DEPLOY_SHARE_NAME: $DEPLOY_SHARE_NAME"
-                    }
            }
           }
 
