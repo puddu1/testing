@@ -5,7 +5,7 @@ pipeline {
           steps{
             sh ''' echo "hello" 
             git branch
-            last_comm=$(git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short)'
+            last_comm = git for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short
             echo $last_comm
             '''
           }
