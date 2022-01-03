@@ -6,9 +6,9 @@ pipeline {
           script{
             sh ''' echo "hello" 
             git branch
+            '''
             env last_comm = 10
             echo $last_comm
-            '''
            }
           }
 
