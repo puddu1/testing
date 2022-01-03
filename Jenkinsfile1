@@ -8,7 +8,7 @@ pipeline {
               changeset 'WEBPC'
           }
 
-                   echo %Choice Job%
+                   echo ${Choice Job}
                    def DEPLOYMENT_SHARE_NAME = 'NEW WEB'
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
                         echo "DEPLOY_SHARE_NAME: $DEPLOY_SHARE_NAME"
