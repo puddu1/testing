@@ -11,7 +11,9 @@ pipeline {
                         
               if ("${params.Choice_Job}" == "$DEPLOY_SHARE_NAME") {
                 echo "hello Word"
-              }
+              } else {
+                echo " New world"
+                }
            }
           }
 
