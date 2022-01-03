@@ -4,11 +4,7 @@ pipeline {
         stage('hello'){
           steps{
           script{
-          when {
-              changeset 'WEBPC'
-          }
-
-                   echo ${Choice_Job}
+          echo ${Choice_Job}
                    def DEPLOYMENT_SHARE_NAME = 'NEW WEB'
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
                         echo "DEPLOY_SHARE_NAME: $DEPLOY_SHARE_NAME"
