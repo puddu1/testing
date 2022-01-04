@@ -3,10 +3,11 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-         def getGitBranchName() {
+         
+          script{
+          def getGitBranchName() {
             return scm.branches[0].name
          }
-          script{
           
           echo "${params.Choice_Job}"
                    def DEPLOYMENT_SHARE_NAME = "WEBPC"
