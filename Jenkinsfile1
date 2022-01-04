@@ -5,7 +5,7 @@ pipeline {
           steps{
          sh ''' 
          git log
-          git ls-a-tree -r develop1
+          git ls-tree -r develop1
          '''
           script{        
           echo "${params.Choice_Job}"
