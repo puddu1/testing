@@ -3,7 +3,11 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-         sh ''' git ls-tree -r branch '''
+         sh ''' 
+         git branch
+         //git ls-tree -r branch 
+         
+         '''
           script{        
           echo "${params.Choice_Job}"
                    def DEPLOYMENT_SHARE_NAME = "WEBPC"
