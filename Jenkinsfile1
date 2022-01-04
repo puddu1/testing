@@ -4,7 +4,7 @@ pipeline {
         stage('hello'){
           steps{
          sh ''' 
-         git log
+         # git log
           git ls-tree -r develop1
          '''
           script{        
