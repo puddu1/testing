@@ -3,7 +3,8 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-         echo git branch
+         def scmVars = checkout([...])
+        echo 'scm : the commit id is ' + scmVars.GIT_COMMIT
           script{        
           echo "${params.Choice_Job}"
                    def DEPLOYMENT_SHARE_NAME = "WEBPC"
