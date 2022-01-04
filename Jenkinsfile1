@@ -3,8 +3,9 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-          script{
           echo "${BRANCH_NAME}"
+          script{
+          
           echo "${params.Choice_Job}"
                    def DEPLOYMENT_SHARE_NAME = "WEBPC"
                         env.DEPLOY_SHARE_NAME = "${DEPLOYMENT_SHARE_NAME}"
