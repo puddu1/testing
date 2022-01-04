@@ -3,7 +3,9 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-          echo $env.BRANCH_NAME
+         def getGitBranchName() {
+            return scm.branches[0].name
+         }
           script{
           
           echo "${params.Choice_Job}"
