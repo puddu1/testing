@@ -4,8 +4,7 @@ pipeline {
         stage('hello'){
           steps{
          sh ''' 
-         git branch
-         //git ls-tree -r branch 
+         git log
          
          '''
           script{        
