@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('hello'){
           steps{
-          echo env.BRANCH_NAME
+          echo $env.BRANCH_NAME
           script{
           
           echo "${params.Choice_Job}"
